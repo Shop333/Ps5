@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ps-blue: #003087;
+  --color-ps-light-blue: #0072ce;
+  --font-sans: 'Inter', 'system-ui', 'sans-serif';
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #020617; /* Slate 950 */
+  color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Background Mesh Gradient yang "Mahal" */
+.bg-mesh {
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(220,100%,10%,1) 0, transparent 50%), 
+    radial-gradient(at 100% 0%, hsla(210,100%,15%,1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, hsla(230,100%,10%,1) 0, transparent 50%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
