@@ -8,21 +8,21 @@ export default function Hero() {
     visible: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3, // Jeda sebelum anak-anaknya mulai muncul
-        staggerChildren: 0.2 // Jeda antar kata/huruf
+        delayChildren: 0.3,
+        staggerChildren: 0.2
       }
     }
   };
 
-  // Variasi animasi untuk setiap kata/bagian teks
-  const itemVariants = {
+  // Kita tambahkan ': any' agar TypeScript tidak protes soal format 'ease' di Vercel
+  const itemVariants: any = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
         duration: 0.8,
-        ease: [0.6, 0.05, -0.01, 0.9] // Custom ease untuk gerakan yang smooth
+        ease: [0.6, 0.05, -0.01, 0.9] 
       }
     }
   };
@@ -61,7 +61,7 @@ export default function Hero() {
           <motion.span variants={itemVariants} className="block text-white">THE ULTIMATE</motion.span>
           <motion.span 
             variants={itemVariants} 
-            className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-ps-light-blue"
+            className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-blue-300"
           >
             PLAYSTATION
           </motion.span>
