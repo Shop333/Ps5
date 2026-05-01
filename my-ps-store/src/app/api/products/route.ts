@@ -35,7 +35,8 @@ export async function POST() {
       { name: "Gran Turismo 7", price: 800000, category: "Kaset", stock: 7, description: "Simulator balap paling nyata." },
       { name: "Final Fantasy VII Rebirth", price: 900000, category: "Kaset", stock: 9, description: "Kelanjutan kisah Cloud Strife." },
       { name: "Ghost of Tsushima Director's Cut", price: 700000, category: "Kaset", stock: 6, description: "Menjadi samurai di pulau Tsushima." },
-      { name: "Horizon Forbidden West", price: 680000, category: "Kaset", stock: 11, description: "Petualangan Aloy di dunia robot." },
+      { name: "Horizon Forbidden West", price: 680000, category: "Kaset", stock: 11, description: "Petualangan Aloy di dunia robot." }, 
+      { name: "Resident Evil 8 village", price: 690000, category: "Kaset", stock: 5, description: "Klasik horor yang dibuat ulang." },
 
       // --- STIK / CONTROLLER (2 Macam) ---
       { name: "DualSense Wireless Controller White", price: 950000, category: "Stik", stock: 15, description: "Stik original bawaan PS5." },
